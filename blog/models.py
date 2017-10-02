@@ -1,5 +1,7 @@
 from django.db import models
-from django.utils import timezone
+from django.utils import timezone # fix erorr "global name 'timezone' is not defined"
+import datetime # fix
+
 
 
 class Post(models.Model):
